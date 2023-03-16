@@ -11,12 +11,12 @@ const Contact = () => {
         <h1 className=" py-4 tracking-wide font-semibold text-amber-600   italic text-3xl">
           Contact Us
         </h1>
-        <p className=" tracking-wide text-gray-600 text-xl">
+        <p className=" md:w-auto  w-[80%] mx-auto  tracking-wide text-gray-600 text-xl">
           Any questions or remarks? Just write us a message!
         </p>
       </div>
 
-      <div className=" my-20 flex md:flex-nowrap flex-wrap md:w-[90%] w-[80%] mx-auto justify-between">
+      <div className=" md:my-20 my-5 flex md:flex-nowrap flex-wrap md:w-[90%] w-[80%] mx-auto justify-between">
         <div className=" rounded-xl bg-amber-600 text-white md:w-[40%]  p-5">
           <h2 className="py-4 tracking-wide font-semibold text-2xl">
             Contact Information

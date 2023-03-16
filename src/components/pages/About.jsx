@@ -43,14 +43,14 @@ const About = () => {
             <i>What makes us different?</i>
           </h2>
         </div>
-        <p className=" text-justify leading-8">
+        <p className=" text-justify md:leading-8  leading-normal">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eaque
           vitae modi, aperiam necessitatibus nulla enim vel incidunt adipisci.
           Est, eveniet ea commodi necessitatibus id quos rerum nostrum pariatur
           dolores cum praesentium dolorum iste saepe quasi natus voluptatem,
           velit eaque.
         </p>
-        <p className=" text-justify leading-8">
+        <p className=" text-justify md:leading-8  leading-normal">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
           suscipit qui ea quaerat modi quis? Similique earum ab accusantium sit!
         </p>

@@ -5,7 +5,7 @@ const Footer = () => {
     <div className="  bg-slate-100 bg-opacity-20">
       <div className=" lg:w-[80%] mx-auto">
         <div className="footer-items flex  justify-between p-5 flex-wrap md:flex-nowrap ">
-          <div className="footer-item mb-5 md:mb-0">
+          <div className="footer-item mb-5 md:mb-0 md:w-auto  md:m-0 w-[44%] mx-auto">
             <h1 className=" font-semibold mb-5">The Meal</h1>
 
             <p className=" text-amber-500 tracking-wide underline py-1">Blog</p>
@@ -19,7 +19,7 @@ const Footer = () => {
               Delivery Options
             </p>
           </div>
-          <div className="footer-item">
+          <div className="footer-item md:w-auto md:m-0  w-[44%] mx-auto">
             <h1 className=" font-semibold mb-5">Our company</h1>
 
             <p className=" text-amber-500 tracking-wide underline py-1">
@@ -35,7 +35,7 @@ const Footer = () => {
               Press
             </p>
           </div>
-          <div className="footer-item">
+          <div className="footer-item md:w-auto md:m-0  w-[44%] mx-auto">
             <h1 className=" font-semibold mb-5">Work with us</h1>
 
             <p className=" text-amber-500 tracking-wide underline py-1">
@@ -49,7 +49,7 @@ const Footer = () => {
               Affiliates
             </p>
           </div>
-          <div className="footer-item">
+          <div className="footer-item md:w-auto md:m-0  w-[44%] mx-auto">
             <h1 className=" font-semibold mb-5">Contact us</h1>
 
             <p className=" text-amber-500 tracking-wide underline py-1">

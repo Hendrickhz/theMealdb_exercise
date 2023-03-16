@@ -49,7 +49,7 @@ const Detail = () => {
       <div className="flex md:flex-nowrap flex-wrap  md:items-center  ">
         <div className="h-[90%] mx-auto  w-full md:w-[50%] md:mr-10 mr-0 ">
           <img
-            className="  md:h-[500px] md:w-[500px] w-[300px] h-[300px] "
+            className="border border-stone-600 rounded  md:h-[500px] md:w-[500px] w-[300px] h-[300px] mx-auto"
             src={meal.strMealThumb}
             alt=""
           />
@@ -89,7 +89,7 @@ const Detail = () => {
               <ul className="md:mt-4 mt-0 h-[200px] overflow-auto leading-7  text-gray-600 ">
                 {Ingredients.map((ingre) => {
                   return (
-                    <li key={ingre.id} className="">
+                    <li key={ingre.id} className=" ">
                       {ingre.name}
                     </li>
                   );

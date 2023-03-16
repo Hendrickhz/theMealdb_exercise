@@ -37,7 +37,7 @@ const Home = () => {
   return (
     <div className=" ">
       <div className=" mb-20 md:mb-4 ">
-        <p className=" italic mt-5  md:mt-40 text-center font-semibold text-4xl text-amber-600  ">
+        <p className=" italic mt-5  md:mt-32 text-center font-semibold text-4xl text-amber-600  ">
           Take the stress out of mealtime
         </p>
         <div className="mx-auto w-[90%]  h-[75vh] hero_section md:flex items-center md:gap-6 justify-center">

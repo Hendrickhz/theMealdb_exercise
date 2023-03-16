@@ -50,7 +50,7 @@ const Search = () => {
       <div className="flex md:flex-nowrap flex-wrap  md:items-center  ">
         <div className="h-[90%] mx-auto  w-full md:w-[50%] md:mr-10 mr-0 ">
           <img
-            className="  md:h-[500px] md:w-[500px] w-[300px] h-[300px] "
+            className="border border-stone-600 rounded mx-auto  md:h-[500px] md:w-[500px] w-[300px] h-[300px] "
             src={meal.strMealThumb}
             alt=""
           />
