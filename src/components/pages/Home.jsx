@@ -1,9 +1,9 @@
 import React, { useContext, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-
+import { StateContext } from "../Context/StateContext";
 const Home = () => {
   const [meal, setMeal] = useState({});
-  const { menu, setMenu } = useContext(StateContext);
+  const { setMenu } = useContext(StateContext);
   const fetchData = async () => {
     const api = await fetch(
       `https://www.themealdb.com/api/json/v1/1/random.php`
@@ -33,12 +33,13 @@ const Home = () => {
   useEffect(() => {
     fetchMeals();
   }, []);
-  console.log(meals);
+  
   return (
     <div className=" ">
       <div className=" mb-20 md:mb-4 ">
-        <p className=" italic mt-5  md:mt-40 text-center font-semibold text-4xl text-amber-600  ">Take the stress
-        out of mealtime</p>
+        <p className=" italic mt-5  md:mt-40 text-center font-semibold text-4xl text-amber-600  ">
+          Take the stress out of mealtime
+        </p>
         <div className="mx-auto w-[90%]  h-[75vh] hero_section md:flex items-center md:gap-6 justify-center">
           <div className="mx-auto mt-4 md:mt-0">
             <img
@@ -82,7 +83,7 @@ const Home = () => {
         >
           {meals.slice(0, 6).map((meal) => {
             return (
-              <div className="w-[30%] lg:w-[20%] ">
+              <div className="w-[30%] lg:w-[20%] " key={meal.idMeal}>
                 <img
                   className=" lg:w-[300px] "
                   src={meal.strMealThumb}

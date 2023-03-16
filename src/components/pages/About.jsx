@@ -1,10 +1,11 @@
 import React, { useContext, useEffect } from "react";
+import { StateContext } from "../Context/StateContext";
 
-const { menu, setMenu } = useContext(StateContext);
-useEffect(() => {
-  setMenu(false);
-}, []);
 const About = () => {
+  const { setMenu } = useContext(StateContext);
+  useEffect(() => {
+    setMenu(false);
+  }, []);
   const members = [
     {
       id: 1,
@@ -55,18 +56,24 @@ const About = () => {
         </p>
       </div>
       <div className="team-container my-9">
-        <h1 className=" text-amber-500 font-semibold text-3xl text-center py-8">Our People</h1>
+        <h1 className=" text-amber-500 font-semibold text-3xl text-center py-8">
+          Our People
+        </h1>
         <div className=" flex flex-wrap gap-4 justify-center">
-          {
-            members.map(member => 
-             { return <div key={member.id}>
-              <img className="w-[200px] h-[200px] object-cover object-center rounded-full" src={member.img} alt="" />
-              <h5 className=" mt-1 font-semibold text-gray-600 text-center">{member.name}</h5>
-            </div>}
-              
-              
-              )
-          }
+          {members.map((member) => {
+            return (
+              <div key={member.id}>
+                <img
+                  className="w-[200px] h-[200px] object-cover object-center rounded-full"
+                  src={member.img}
+                  alt=""
+                />
+                <h5 className=" mt-1 font-semibold text-gray-600 text-center">
+                  {member.name}
+                </h5>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>

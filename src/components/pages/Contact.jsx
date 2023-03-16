@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from "react";
-
+import { StateContext } from "../Context/StateContext";
 const Contact = () => {
-  const { menu, setMenu } = useContext(StateContext);
+  const { setMenu } = useContext(StateContext);
   useEffect(() => {
     setMenu(false);
   }, []);
