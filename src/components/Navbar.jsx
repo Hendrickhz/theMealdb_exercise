@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
+import { StateContext } from "./Context/StateContext";
 
 const Navbar = () => {
-  const [menu, setMenu] = useState(false);
-  useEffect(() => {
-    
-  }, [menu]);
+  const { menu, setMenu } = useContext(StateContext);
+  useEffect(() => {}, [menu]);
 
   return (
     <div className=" ">

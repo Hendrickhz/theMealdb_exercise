@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
 
-
+const { menu, setMenu } = useContext(StateContext);
+useEffect(() => {
+  setMenu(false);
+}, []);
 const About = () => {
   const members = [
     {

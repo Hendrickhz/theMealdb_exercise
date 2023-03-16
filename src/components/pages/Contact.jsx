@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
 
 const Contact = () => {
+  const { menu, setMenu } = useContext(StateContext);
+  useEffect(() => {
+    setMenu(false);
+  }, []);
   return (
     <div className=" md:h-[89vh] lg:w-[80%] mx-auto">
       <div className=" text-center">

@@ -3,6 +3,10 @@ import { useNavigate } from "react-router-dom";
 import Card from "../Card";
 import { StateContext } from "../Context/StateContext";
 const Products = () => {
+  const { menu, setMenu } = useContext(StateContext);
+  useEffect(() => {
+    setMenu(false);
+  }, []);
   const { meals , SetSearch,search} = useContext(StateContext);
   const navigate = useNavigate();
   const onSubmit = (e) => {

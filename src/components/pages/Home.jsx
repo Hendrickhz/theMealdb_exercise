@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const [meal, setMeal] = useState({});
+  const { menu, setMenu } = useContext(StateContext);
   const fetchData = async () => {
     const api = await fetch(
       `https://www.themealdb.com/api/json/v1/1/random.php`
@@ -12,6 +13,7 @@ const Home = () => {
   };
   useEffect(() => {
     fetchData();
+    setMenu(false);
   }, []);
 
   //go detail by id
